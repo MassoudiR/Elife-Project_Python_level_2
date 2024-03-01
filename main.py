@@ -728,4 +728,6 @@ class App(customtkinter.CTk):
 
 if __name__ == "__main__":
     app = App()
+    image_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), "assest")
+    app.iconphoto(False, tk.PhotoImage(file=os.path.join(image_path, "icon.png")))
     app.mainloop()
